@@ -1,0 +1,237 @@
+/* all */
+*{ 
+	padding: 0;
+	margin: 0;
+	font-family: 'Josefin Sans', sans-serif;
+	box-sizing: border-box;
+}
+/* behind */
+.something{
+	height: 100vh;
+	width: 100%;
+	background-image: url(../img/background.gif);
+	background-size: cover;
+	background-position: center;
+}
+/* samij verh */
+
+#rectangle {
+	position: fixed;
+	right: 0%;
+	width: 47%;
+	height: 80px;
+	background: rgb(3, 3, 3);
+	border-bottom-left-radius: 50px;
+	border: 3px solid #00d4f9;
+  }
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-left: 8%;
+	padding-right: 8%;
+}
+nav h2{
+	padding-top: 45px;;
+}
+/* Who I Am ? */
+.logotype{
+	color: white;
+	font-size: 35px;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+/* all blue text */
+span{
+	color: #00d4f9;
+}
+/* navigacija, pravij verhnij ugol */
+nav ul{
+	position: fixed;
+	right:155px;
+	padding-top: 10px;
+}
+nav ul li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 10px  25px;
+}
+nav ul li a{
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: capitalize;
+	box-shadow: 10px 10px 10px #000;
+}
+nav ul li a:hover{
+	color: #00d4f9;
+	transition: .4s;
+}
+/* My name is */
+.content{
+	position: absolute;
+	top: 50%;
+	left:8%;
+	transform: translateY(-50%);
+}
+h1{
+	color: white;
+	margin: 20px 0px 20px;
+	font-size: 75px;
+}
+h3{
+	color: white;
+	font-size: 25px;
+	margin-bottom: 50px;
+}
+h4{
+	color: #fcfc;
+	letter-spacing: 2px;
+	font-size: 20px;
+}
+/* kvadrat v about */
+.about{
+	width: 100%;
+	padding: 100px 0px;
+	background-color: #191919;
+}
+/* otstup ot foto */
+.about-text{
+	width: 550px;
+}
+/* knopka "More..." */
+button{
+	background-color:#00d4f9;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 13px 30px;
+	border-radius: 30px;
+	transition: .4s; 
+}
+button:hover{
+	background-color: transparent;
+	border: 2px solid #00d4f9;
+	cursor: pointer;
+}
+/* About me */
+.main{
+	width: 1130px;
+	max-width: 95%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.about-text h2{
+	color: white;
+	font-size: 75px;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+}
+.about-text p{
+	color: #fcfc;
+	letter-spacing: 1px;
+	line-height: 28px;
+	font-size: 18px;
+	margin-bottom: 45px;
+}
+/* My skills */
+.service{
+	background: #101010;
+	width: 100%;
+	padding: 100px 0px;
+}
+.title h2{
+	color: white;
+	font-size: 75px;
+	width: 1130px;
+	margin: 30px auto;
+	text-align: center;
+}
+/* po gorizontali */
+.box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 400px;
+}
+/* kvadrati */
+.card{
+	height: 365px;
+	width: 335px;
+	padding: 20px 35px;
+	background: #191919;
+	border-radius: 20px;
+	margin: 15px;
+	overflow: hidden;
+	text-align: center;
+}
+
+h5{
+	color: white;
+	font-size: 23px;
+	margin-bottom: 15px;
+}
+/* tekst */
+.pra p{
+	color: #fcfc;
+	font-size: 16px;
+	line-height: 27px;
+	margin-bottom: 25px;
+}
+
+/* connection */
+.connection{
+	width: 100%;
+	height: 500px;
+	background: #191919;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+.connection p{
+	color: white;
+	font-size: 15px;
+	font-weight: bold;
+	margin-bottom: 0px;
+}
+.connection h6{
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 0px;
+}
+/* Pole vvoda */
+.newslatter form{
+	width: 380px;
+	max-width: 100%;
+	position: relative;
+}
+.newslatter form input:nth-child(1){
+	display: inline-block;
+	width: 100%;
+	padding: 14px 130px 14px 15px;
+	border: 2px solid #f9004d;
+	outline: none;
+	border-radius: 30px;
+}
+.newslatter form input:nth-child(2){
+	position: absolute;
+	display: inline-block;
+	outline: none;
+	border: none;
+	padding: 10px 30px;
+	border-radius: 30px;
+	background-color:#f9004d;
+	color: white;
+	box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+	top: 6px;
+	right: 6px; 
+}
+
+html{
+	scroll-behavior: smooth;
+}

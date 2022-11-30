@@ -1,0 +1,241 @@
+/* all */
+*{ 
+	padding: 0;
+	margin: 0;
+	font-family: 'Josefin Sans', sans-serif;
+	box-sizing: border-box;
+}
+
+/* rectanglik*/
+#rectangle {
+	position: fixed;
+	right: 0%;
+	width: 100%;
+	height: 80px;
+	background: rgb(17, 17, 17);
+  }
+/* samij verh */
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-left: 8%;
+	padding-right: 8%;
+}
+
+/* navigacija, verh */
+nav ul{
+	z-index: 1;
+	position: fixed;
+	right:155px;
+	padding-top: 10px;
+	text-align: center;
+}
+nav ul li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 10px  25px;
+	margin-top: 1.3%;
+}
+nav ul li a{
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: capitalize;
+	transition: .4s ;
+}
+nav ul li a:hover{
+	transition: .4s ;
+	font-size: 17px;
+}
+.obolochka{
+	height: 25vh;
+	width: 100%;
+	background-color: #191919;
+}
+a {
+	color: white;
+	transition: .4s ;
+}
+a:hover {
+	color: rgb(255, 235, 253)!important;;
+	transition: .4s;
+}
+#gallerys{
+	color: white;
+	margin: 20px 260% 100px;
+	font-size: 90px;
+}
+h1{
+	color: white;
+	margin: 20px 150% 20px;
+	font-size: 70px;
+}
+.content{
+	position: absolute;
+	top: 20%;
+	transform: translateY(-50%);
+}
+/* container for images*/
+.wrapper-gallery {
+    margin: 0 15vw;
+    height: 680px;
+}
+
+#index-gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 0.65fr;
+    grid-template-rows: auto;
+    grid-gap: 15px;
+    grid-template-areas: 
+    "gallery-p gallery-p gallery-p gallery-p"
+    "gallery-h2 gallery-h2 gallery-h2 gallery-h2"
+    "img1 img2 img4 img3"
+    "img5 img6 img7 img3";
+}
+
+#index-gallery .galllery-img {
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor:pointer;
+}
+
+.prod_obolochki_gallery{
+	height: 75vh;
+	width: 100%;
+	background-color: rgb(17, 17, 17);
+	font-size: 23px;
+	color: white;
+	padding-left: 160px;
+	line-height: 300px;
+}
+
+#index-gallery p {
+    grid-area: gallery-p;
+}
+#index-gallery h2 {
+    grid-area: gallery-h2;
+}
+
+/* images */
+
+#index-gallery .img1 {
+    grid-area: img1;
+    background-image: url("../img/img1.jpg");
+}
+#index-gallery .img2 {
+    grid-area: img2;
+    background-image: url("../img/img2.jpg");
+    background-position: top;
+}
+#index-gallery .img3 {
+    grid-area: img3;
+    background-image: url("../img/img3.jpg");
+    height: 650px;
+}
+#index-gallery .img4 {
+    grid-area: img4;
+    background-image: url("../img/img4.jpg");
+}
+#index-gallery .img5 {
+    grid-area: img5;
+    background-image: url("../img/img5.jpg");
+}
+#index-gallery .img6 {
+    grid-area: img6;
+    background-image: url("../img/img6.jpg");
+    background-position: left;
+}
+#index-gallery .img7 {
+    grid-area: img7;
+    background-image: url("../img/img7.jpg");
+    background-position: right;
+}
+
+/* chernen'koe open */
+.gallery-img div {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-img p {
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.gallery-img p:hover {
+    color: rgb(255, 221, 252)!important;;
+	transition: .4s;
+}
+
+.gallery-img div:hover {
+    opacity: 0.8;
+    transition: all ease-in-out 100ms;
+}
+
+/*Popup window*/
+
+.img-window {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 111;
+}
+
+.img-window img {
+    max-height: 80vh;
+    max-width: 80vw;
+}
+
+/*button Next*/
+
+.img-btn-next{
+    display: block;
+    padding: 6px 10px;
+    border-radius: 4px;
+    border-color: black;
+    position: fixed;
+    top: 48vh;
+    z-index: 500;
+    color: antiquewhite;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.img-btn-next:hover{
+    opacity: 0.8;
+}
+
+/*button Prev*/
+
+.img-btn-prev{
+    display: block;
+    padding: 6px 10px;
+    border-radius: 4px;
+    border-color: black;
+    position: fixed;
+    top: 48vh;
+    z-index: 500;
+    color: antiquewhite;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.img-btn-prev:hover{
+    opacity: 0.8;
+}
